@@ -1,0 +1,20 @@
+{
+  "name": "240823069",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnu110222/240823069.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishnu110222/240823069/issues"
+  },
+  "homepage": "https://github.com/vishnu110222/240823069#readme"
+}
