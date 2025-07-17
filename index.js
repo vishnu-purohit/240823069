@@ -74,14 +74,66 @@
 
 // prog-7 reverse the number
 
-let num=1234
-let rev=0
-let temp=num
+// let num=1234
+// let rev=0
+// let temp=num
 
-for(i=1; temp!=0; i++)
-{
-    let dig=temp%10;
-    rev=rev*10+dig;
-    temp=Math.floor(temp/10);
-}
-console.log(rev)
+// for(i=1; temp!=0; i++)
+// {
+//     let dig=temp%10;
+//     rev=rev*10+dig;
+//     temp=Math.floor(temp/10);
+// }
+// console.log(rev)
+
+
+// prog-8 palindrom number
+
+// let num=121
+// let original=num
+// let rev=0
+
+// for(i=1; num!=0; i++)
+// {
+//     rev=rev*10+(num%10)
+//     num=Math.floor(num/10)
+// }
+
+// if(original==rev)
+// {
+//     console.log("palindrom")
+// }
+// else
+// {
+//     console.log("not palindrom")
+// }
+
+
+// prog-9 prime number
+
+// let num=4
+// let prime=true
+
+// if(num<=1)
+// {
+//     isprime=false
+// }
+// else{
+//     for(i=2; i<=num; i++)
+//     {
+//         if(num%i==0)
+//         {
+//             isprime=false
+//             break
+//         }
+//     }
+// }
+
+// if(isprime==true)
+// {
+//     console.log("prime number")
+// }
+// else
+// {
+//     console.log("not prime number")
+// }
