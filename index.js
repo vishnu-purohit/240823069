@@ -1,6 +1,6 @@
 // console.log('hello');
 
-// check even or odd
+// prog-1 check even or odd
 
 // const no=7;
 
@@ -13,7 +13,7 @@
 // }
 
 
-// find the maximum of 2 numbers
+// prog-2 find the maximum of 2 numbers
 
 // a=5;
 // b=9;
@@ -27,7 +27,7 @@
 // }
 
 
-//check leap year
+// prog-3 check leap year
 
 // a=2020;
 // if(a%4==0){
@@ -38,13 +38,50 @@
 //         console.log('a is not leap year');
 // }
 
-// sum of natural numbers
+// prog-4 sum of natural numbers
 
-let a=5;
-let total=0;
-for(i=1; i<=a; i++)
-{
+// let a=5;
+// let total=0;
+// for(i=1; i<=a; i++)
+// {
     
-    total=total+i;
+//     total=total+i;
+// }
+// console.log(total);
+
+
+// prog-5 factorial no.
+
+// const fact=4;
+// var total=1;
+
+// for(i=fact; i>=1; i--)
+// {
+//     total=total*i;
+// }
+// console.log(total);
+
+
+// prog-6 multiplication table
+
+// const no=5;
+
+// for(i=1; i<=10; i++)
+// {
+//     console.log(no+"*"+i+"="+no*i)
+// }
+
+
+// prog-7 reverse the number
+
+let num=1234
+let rev=0
+let temp=num
+
+for(i=1; temp!=0; i++)
+{
+    let dig=temp%10;
+    rev=rev*10+dig;
+    temp=Math.floor(temp/10);
 }
-console.log(total);
+console.log(rev)
