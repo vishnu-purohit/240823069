@@ -137,3 +137,77 @@
 // {
 //     console.log("not prime number")
 // }
+
+
+// prog-10 count digits in a number
+
+// let num=12324
+// let count=0
+
+// while(num>0)
+// {
+//     num=Math.floor(num/10)
+//     count++
+// }
+// console.log(count)
+
+
+// prog-11 sum of digits
+
+// let num=1234
+// let sum=0
+// for(i=0; i<String(num).length; i++)
+// {
+//     sum +=Number(String(num)[i])
+// }
+// console.log(sum)
+
+
+// prog-12 check armstrong number
+
+// let num=154
+// let digit=String(num)
+// let sum=0
+
+// for(i=0; i<digit.length; i++)
+// {
+//     sum +=Math.pow(Number(digit[i]),digit.length)
+// }
+// if(sum==num)
+// {
+//     console.log("num is armstrong")
+// }
+// else
+// {
+//     console.log("num is not armstrong")
+// }
+
+
+// prog-13 phebonaki series
+
+// let count=15
+// let a=0
+// let b=1
+
+// for(i=0; i<count; i++)
+// {
+//     console.log(a)
+//     next=a+b
+//     a=b
+//     b=next
+// }
+
+
+// prog-14 vowel and consonant
+
+let char='v'
+
+if(char=='a' || char=='e' || char=='i' || char=='o' || char=='u' ||
+char=='A' || char=='E' || char=='I' || char=='O' || char=='U' )
+{
+    console.log("character is a vowel")
+}
+else
+{
+    console.log("character is a consonant")
+}
