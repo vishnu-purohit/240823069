@@ -215,3 +215,91 @@
 
 // prog-15 simple calculator
 
+// let a=20
+// let b=10
+
+// console.log("add : ",a+b)
+// console.log("subtract : ",a-b)
+// console.log("multiply : ",a*b)
+// console.log("division : ",a/b)
+
+
+// prog-16 gcd in node
+
+// let a=20
+// let b=28
+// let gcd=1
+
+// for(i=1; i<=a && i<=b; i++)
+// {
+//     if(a%i==0 &&b%i==0)
+//     {
+//         gcd=i
+//     }
+// }
+// console.log("gcd is : ",gcd)
+
+
+// prog-17 perfect number
+
+// let num=28
+// let sum=0
+
+// for(i=1; i<num; i++)
+// {
+//     if(num%i==0)
+//     {
+//         sum+=i
+//     }
+// }
+
+// if(sum==num)
+// {
+//     console.log(num+" is perfect number")
+// }
+// else
+// {
+//     console.log(num+" is not perfect number")
+// }
+
+
+// prog-18 print all divisors
+
+// let num=10
+
+// console.log("divisors of ",num," are :")
+
+// for(i=1; i<=num; i++)
+// {
+//     if(num%i==0)
+//     {
+//         console.log(i)
+//     }
+// }
+
+
+// prog-19  number is positive nagative or zero
+
+// let num=0
+
+// if(num>0)
+// {
+//     console.log("number is positive")
+// }
+// else if(num<0)
+// {
+//     console.log("number is negative")
+// }
+// else
+// {
+//     console.log("number is zero")
+// }
+
+// prog-20 find power
+
+// let a=2
+// let b=3
+
+// let res=a**b
+
+// console.log(a+" raised to power "+b+" is : ",res)
