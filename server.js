@@ -1,13 +1,15 @@
-
 const express = require("express");
-const studentRoute=require("./routes/studentRoute")
+const path = require("path");
 const app = express();
+const studentRoutes = require("./routes/studentRoute");
 
 app.use(express.json());
+app.use("/students", studentRoutes);
 
-app.use("/student",studentRoute);
+// Serve static files from public folder
+app.use(express.static(path.join(__dirname, "public")));
 
-const port = 80;
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });

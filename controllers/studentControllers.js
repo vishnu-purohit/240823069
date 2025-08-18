@@ -1,19 +1,24 @@
-exports.index=(req,res)=>{
-    res.send("index");
-}
+exports.index = (req, res) => {
+    res.json({ message: "Listing all students." });
+};
 
-exports.show=(req,res)=>{
-    res.send(`show id ${req.params.id}`);
-}
+exports.show = (req, res) => {
+    const id = req.params.id;
+    res.json({ message: `Showing student with ID ${id}` });
+};
 
-exports.store=(req,res)=>{
-    res.send(`data received ${req.params.id}`);
-}
+exports.store = (req, res) => {
+    const { name, city } = req.body;
+    res.json({ message: "Student created successfully!", data: { name, city } });
+};
+exports.delete = (req, res) => {
+    const id = req.params.id;
+    res.json({ message: `Deleted student with ID ${id}` });
+};
 
-exports.update=(req,res)=>{
-    res.send(`updated id  ${req.params.id}`);
-}
-
-exports.delete=(req,res)=>{
-    res.send(`deleted id ${req.params.id}\n`);
-}
+// Optional update method
+// exports.update = (req, res) => {
+//     const id = req.params.id;
+//     const { name } = req.body;
+//     res.json({ message: `Updated student ${id}`, data: { name } });
+// };
