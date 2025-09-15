@@ -6,22 +6,27 @@ mongoose.connect("mongodb+srv://purohitvishnu125_db_user:vishnu111@vishnu.celttx
 });
 
 const studentSchema=new mongoose.Schema({
-    name: String,
-    department: String,
-    year: Number,
-    enrollment: Number,
-    address: String,
+    title:String,
+    artist:String,
+    category:String,
+    album:String,
+    url:String,
+    photo:String,
+    year:Number,
 });
 
 const Student=mongoose.model("Student",studentSchema);
 console.log("MongoDB connected successfully");
 
 // const student= new Student({
-//     name: "hitesh rudakiya",
-//     department: "Computer",
-//     year: 2025,
-//     enrollment: 240823082,
-//     address: "rajkot",
+//     title: 'Shape of You',
+//       artist: 'Ed Sheeran',
+//       category: 'Pop',
+//       album: 'Divide',
+//       url: 'https://example.com/shape-of-you',
+//       photo: 'https://example.com/images/shape-of-you.jpg',
+//       year: 2017
+
 // });
 
 // student.save().then(()=>{
@@ -32,10 +37,10 @@ console.log("MongoDB connected successfully");
 // })
 
 // select or fetch data
-Student.find({name:"parth solanki"}).then((result)=>{
-    console.log("all record : ",result)
-})
+// Student.find({name:"parth solanki"}).then((result)=>{
+//     console.log("all record : ",result)
+// })
 
-.catch((error)=>{
-    console.log("error fetch",error)
-})
+// .catch((error)=>{
+//     console.log("error fetch",error)
+// })
